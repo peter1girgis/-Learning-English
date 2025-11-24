@@ -798,7 +798,7 @@
             const utterance = new SpeechSynthesisUtterance(msg.text);
 
             // Set voice properties based on speaker (alternate between voices)
-            utterance.rate = 0.7; // Slightly slower for clarity
+            utterance.rate = 0.4; // Slightly slower for clarity
             utterance.pitch = index % 2 === 0 ? 1.0 : 1.2; // Different pitch for different speakers
             utterance.volume = 1.0;
             utterance.lang = 'en-US';
